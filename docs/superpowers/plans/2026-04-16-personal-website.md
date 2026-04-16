@@ -890,7 +890,7 @@ const links: Link[] = [
   },
   {
     label: 'GitHub',
-    href: 'https://github.com/costaxanthos',
+    href: 'https://github.com/constantinexanthos',
     external: true,
   },
   {
@@ -931,7 +931,7 @@ const links: Link[] = [
 </section>
 ```
 
-Note: LinkedIn and GitHub URLs are my best guesses from Costa's name and email. Confirm both URLs load a real profile before deploy (Task 12). If either is wrong, update the `href` value in this file.
+Note: GitHub URL is confirmed (`constantinexanthos`). LinkedIn URL is a best guess from Costa's name — confirm it loads his real profile before deploy (Task 12.4). If wrong, update the `href` value in this file.
 
 - [ ] **Step 10.3: Add Contact to the page**
 
