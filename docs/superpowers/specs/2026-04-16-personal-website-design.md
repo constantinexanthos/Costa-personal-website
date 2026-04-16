@@ -99,14 +99,16 @@ To be lightly edited during implementation for rhythm, but substance is locked.
 
 ### Stack
 
-A small block under the heading "Built with":
+A small block under a heading like "Stack" or "What I use". Covers the working stack — tools, editors, and infra — not just AI tools. Confirmed items:
 
+- **Ghostty** — terminal
 - **Conductor** — orchestrating coding agents
-- **Ghosty** — (description TBD at implementation based on current usage)
 - **Wispr Flow** — voice-to-text for writing
 - **Opus 4.7** — the model I use day to day
+- **Vercel** — hosting / deploy
+- **Railway** — backend / services
 
-One-line description per tool. Links to each tool's site where applicable.
+One-line description per tool. Each links to the tool's site. Costa may add more items at implementation; keep the layout flexible for a list of 6–10 entries.
 
 ### Contact
 
@@ -184,6 +186,6 @@ The site is considered done for v1 when:
 - Final font pairing (Fraunces vs. Instrument Serif for display; Inter vs. Geist for body).
 - Final accent color (must pass contrast; aim for something warm and restrained).
 - Domain name confirmation and acquisition.
-- Ghosty one-line description (confirm Costa's usage before writing).
+- Any additional stack items beyond the six listed (e.g. editor, design tool, note-taking).
 - Exact LinkedIn / email / GitHub URLs.
 - Initial "Now" line text.
