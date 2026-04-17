@@ -1,0 +1,28 @@
+---
+import { stack } from '../data/stack';
+---
+<section class="py-12 md:py-16" aria-labelledby="stack-heading">
+  <h2
+    id="stack-heading"
+    class="font-mono text-xs uppercase tracking-[0.12em] text-[color:var(--color-muted)]"
+  >
+    Stack
+  </h2>
+  <ul class="mt-6 space-y-3">
+    {
+      stack.map((item) => (
+        <li class="flex items-baseline gap-3 text-[15px]">
+          <a
+            href={item.url}
+            target="_blank"
+            rel="noreferrer"
+            class="text-[color:var(--color-ink)] underline decoration-transparent underline-offset-[3px] transition-colors hover:decoration-[color:var(--color-accent)]"
+          >
+            {item.name}
+          </a>
+          <span class="text-[color:var(--color-muted)]">— {item.description}</span>
+        </li>
+      ))
+    }
+  </ul>
+</section>
