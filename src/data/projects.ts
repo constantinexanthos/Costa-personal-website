@@ -26,7 +26,7 @@ export const projects: Project[] = [
     name: 'Beacon AP',
     description:
       'Building AI relationship intelligence for a Boston investment firm.',
-    url: null,
+    url: 'https://www.beaconap.com',
     status: 'Consulting',
   },
   {
