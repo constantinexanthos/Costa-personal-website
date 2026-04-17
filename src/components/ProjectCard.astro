@@ -1,0 +1,35 @@
+---
+import type { Project } from '../data/projects';
+
+interface Props {
+  project: Project;
+}
+
+const { project } = Astro.props;
+const hasLink = project.url !== null;
+const Tag = hasLink ? 'a' : 'div';
+const extraProps = hasLink
+  ? { href: project.url!, target: '_blank', rel: 'noreferrer' }
+  : {};
+---
+<Tag
+  class:list={[
+    'group relative block border-t border-black/10 py-6 transition-colors duration-200',
+    hasLink ? 'hover:border-[color:var(--color-accent)]' : 'cursor-default',
+  ]}
+  {...extraProps}
+>
+  <div class="flex items-baseline justify-between gap-4">
+    <h3 class="text-lg font-medium text-[color:var(--color-ink)]">
+      {project.name}
+    </h3>
+    <span
+      class="font-mono text-[11px] uppercase tracking-[0.1em] text-[color:var(--color-muted)] opacity-0 transition-opacity duration-200 group-hover:opacity-100 group-focus-visible:opacity-100"
+    >
+      {project.status}{hasLink ? ' →' : ''}
+    </span>
+  </div>
+  <p class="mt-2 text-[15px] leading-relaxed text-[color:var(--color-muted)]">
+    {project.description}
+  </p>
+</Tag>
