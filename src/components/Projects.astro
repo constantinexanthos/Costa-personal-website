@@ -1,0 +1,21 @@
+---
+import { projects } from '../data/projects';
+import ProjectCard from './ProjectCard.astro';
+---
+<section class="py-12 md:py-16" aria-labelledby="projects-heading">
+  <h2
+    id="projects-heading"
+    class="font-mono text-xs uppercase tracking-[0.12em] text-[color:var(--color-muted)]"
+  >
+    Projects
+  </h2>
+  <ul class="mt-6 border-b border-black/10">
+    {
+      projects.map((project) => (
+        <li>
+          <ProjectCard project={project} />
+        </li>
+      ))
+    }
+  </ul>
+</section>
