@@ -12,7 +12,7 @@ export const projects: Project[] = [
     name: 'Vigil',
     description:
       'A control panel for your coding agents. See what they changed and why, in plain English.',
-    url: 'https://vigil.ai',
+    url: 'https://bevigil.ai',
     status: 'Building',
   },
   {
