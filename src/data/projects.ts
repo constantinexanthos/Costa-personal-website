@@ -38,7 +38,7 @@ export const projects: Project[] = [
   },
   {
     name: 'Neutralis',
-    description: 'A functional prediction market.',
+    description: 'A functional prediction market software.',
     url: 'https://neutralis.ai',
     status: 'Shipped',
   },
